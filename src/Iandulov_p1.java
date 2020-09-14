@@ -3,7 +3,7 @@ public class Iandulov_p1.java
 { 
 public static String encrypt(String number) 
 {
-int arr[] = new int[4];
+int arr[]=new int[4];
 for(int i=0; i<4; i++) 
 {
 char ch=number.charAt(i);
