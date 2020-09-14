@@ -6,21 +6,21 @@ public static String encrypt(String number)
 int arr[] = new int[4];
 for(int i=0; i<4; i++) 
 {
-char ch = number.charAt(i);
-arr[i] = Character.getNumericValue(ch);
+char ch=number.charAt(i);
+arr[i]=Character.getNumericValue(ch);
 }
 
 for(int i=0; i<4; i++) 
 {
-int temp =arr[i] ;
-temp += 7 ;
-temp = temp%10 ;
-arr[i] = temp ;
+int temp=arr[i];
+temp+=7;
+temp=temp%10;
+arr[i]=temp;
 }
-int temp = arr[0];
-arr[0] = arr[2];
+int temp=arr[0];
+arr[0]=arr[2];
 arr[2]=temp;
-temp =arr[1];
+temp=arr[1];
 arr[1]=arr[3];
 arr[3]=temp;
 int newn=0;
@@ -28,19 +28,18 @@ for(int i=0; i<4; i++)
 newn=newn*10+arr[i];
 String output =Integer.toString(newn);
 if(arr[0]==0)
-output = "0"+output;
+output=output+"0";
 return output;
 }
 
 public static String decrypt(String number) 
 {
-int arr[] = new int[4];
+int arr[]=new int[4];
 for(int i=0;i<4;i++) 
 {
-char ch = number.charAt(i);
-arr[i] = Character.getNumericValue(ch);
+char ch=number.charAt(i);
+arr[i]=Character.getNumericValue(ch);
 }
-
 int temp=arr[0];
 arr[0]=arr[2];
 arr[2]=temp;
@@ -94,7 +93,7 @@ break;
 }
 
 }
-int newNumber=0 ;
+int newNumber=0;
 for(int i=0; i<4; i++)
 newNumber=newNumber*10+arr[i];
 String output=Integer.toString(newNumber);
@@ -109,7 +108,7 @@ Scanner sc = new Scanner(System.in);
 System.out.print("Please, enter 4 digit integer:");
 String number = sc.nextLine();
 String encryptedNumber = encrypt(number);
-System.out.println("Decrypted number is: "+encryptedNumber);
-System.out.println("Original number is: "+decrypt(encryptedNumber));
+System.out.println("Decrypted number is "+encryptedNumber);
+System.out.println("Original number is "+decrypt(encryptedNumber));
 }
 }
