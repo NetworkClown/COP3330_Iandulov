@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Encryption 
+public class Iandulov_p1.java
 { 
 public static String encrypt(String number) 
 {
