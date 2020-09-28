@@ -5,10 +5,10 @@ public class BMIcal
 
     public static void main(String[] args) 
     {
-        Scanner in=new Scanner(System.in);
-        System.out.print("Please, write how many pounds you weight: ");
+        scanner in=new scanner(System.in);
+        system.out.print("Please, write how many pounds you weight: ");
         double weight=in.nextDouble();
-        System.out.print("Please, write your height in inches: ");
+        system.out.print("Please, write your height in inches: ");
         double height=in.nextDouble();
     }
         try 
@@ -27,21 +27,21 @@ public class BMI
      this.weight=weight;   
    }
      
-   public double getHeight() 
+   public double getheight() 
    {
      return height;
    }
 
-   public void setHeight(double height) 
+   public void setheight(double height) 
    {
      this.height=height;
    }
-   public double getWeight() 
+   public double getweight() 
    {
      return weight;
    }
 
-   public void setWeight(double weight) 
+   public void setweight(double weight) 
    {
      this.weight=weight;
    }
