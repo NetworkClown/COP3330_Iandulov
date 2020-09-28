@@ -5,24 +5,23 @@ public class BMIcal
 
     public static void main(String[] args) 
     {
-        Scanner in = new Scanner(System.in);
+        Scanner in=new Scanner(System.in);
         System.out.print("Please, write how many pounds you weight: ");
-        double weight = in.nextDouble();
+        double weight=in.nextDouble();
         System.out.print("Please, write your height in inches: ");
-        double height = in.nextDouble();
+        double height=in.nextDouble();
     }
         try 
         {
-            BMI bmi = new BMI(weight,height);
+            BMI bmi=new BMI(weight,height);
             bmi.printBMIResult();
         } 
 }
 
 public class BMI 
 {
-
-   private double weight, height;
-   public BMI(double weight, double height) 
+   private double weight,height;
+   public BMI(double weight,double height) 
    {
      this.height=height;   
      this.weight=weight;   
@@ -52,20 +51,20 @@ public class BMI
      String result;
      if(BMI<=18.5) 
      {
-       result = "Underweight";
+       result="Underweight";
      }
      else if(BMI<25) 
      {
-       result = "Normal weight";
+       result="Normal weight";
      } 
      else if(BMI<30) 
      {
-       result = "Overweight";
+       result="Overweight";
      }
      else
      {
-       result = "Obese";
+       result="Obesity";
      }
-     System.out.printf("Your BMI is %.1f (%s)", BMI, result);
+     System.out.printf("In result,your body mass index is %.1f (%s)",BMI,result);
    }
 }
