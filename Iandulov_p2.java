@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class BMIcal 
 {
-
     public static void main(String[] args) 
     {
         scanner in=new scanner(System.in);
