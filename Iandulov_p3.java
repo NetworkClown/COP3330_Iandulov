@@ -1,17 +1,14 @@
-ShapeTest.java
 public interface Shape 
 {
    public double getArea();
    public String getName();
 }
 
-Shape2DTest.java
 public interface Shape2D 
 {
    public double getVolume();
 }
 
-SquareTest.java
 public class Square implements Shape 
 {
    private double side;
@@ -32,7 +29,6 @@ public class Square implements Shape
    }  
 }
 
-TriangleTest.java
 public class Triangle implements Shape 
 {
    private double base;
@@ -55,7 +51,6 @@ public class Triangle implements Shape
    } 
 }
 
-CircleTest.java
 public class Circle implements Shape 
 {
    private double side;
@@ -76,8 +71,7 @@ public class Circle implements Shape
    } 
 }
 
-CubeTest.java
-public class Cube implements Shape, Shape3D 
+public class Cube implements Shape, Shape2D 
 {
    private double side;
    private String name;
@@ -101,9 +95,8 @@ public class Cube implements Shape, Shape3D
    }
 }
 
-PyramidTest.java
 import java.text.DecimalFormat;
-public class Pyramid implements Shape, Shape3D 
+public class Pyramid implements Shape, Shape2D 
 {
    private double length;
    private double width;
@@ -134,9 +127,8 @@ public class Pyramid implements Shape, Shape3D
    }
 }
 
-SphereTest.java
 import java.text.DecimalFormat;
-public class Sphere implements Shape, Shape3D 
+public class Sphere implements Shape, Shape2D 
 {  
    private double radius;
    private String name;
