@@ -159,6 +159,6 @@ public class Sphere implements Shape, Shape3D
    public double getVolume() 
    {
        DecimalFormat df=new DecimalFormat("####0.00");
-       return Double.parseDouble(df.format((1.333333333333)*(Math.PI)*(radius*radius*radius)));
+       return Double.parseDouble(df.format(1.3333*Math.PI*(radius*radius*radius));
    }
 }
