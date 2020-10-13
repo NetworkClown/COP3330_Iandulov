@@ -9,7 +9,6 @@ Shape2DTest.java
 public interface Shape2D 
 {
    public double getVolume();
-
 }
 
 SquareTest.java
@@ -17,27 +16,20 @@ public class Square implements Shape
 {
    private double side;
    private String name;
-  
-
    public Square(double side) 
    {
        super();
        this.side=side;
        this.name="square";
    }
-
-
    public double getArea() 
    {
        return side*side;
    }
-
    public String getName() 
    {
        return name;
-   }
-  
-  
+   }  
 }
 
 TriangleTest.java
@@ -46,8 +38,6 @@ public class Triangle implements Shape
    private double base;
    private double height;
    private String name;
-  
-
    public Triangle(double base,double height) 
    {
        super();
@@ -127,8 +117,6 @@ public class Pyramid implements Shape, Shape3D
        this.height=height;
        this.name="pyramid";
    }
-
-
    public double getArea() 
    {
        DecimalFormat df=new DecimalFormat("####0.00");
@@ -140,8 +128,6 @@ public class Pyramid implements Shape, Shape3D
    {
        return name;
    }
-
-
    public double getVolume() 
    {
        return length*width*height/3;
